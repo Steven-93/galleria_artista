@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fffef5;
+  color: #222;
+}
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1504198266285-1659872e6590');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+header h1 {
+  font-size: 3.5em;
+  margin: 0;
+  color: #ffcc00;
+}
+header p {
+  font-size: 1.3em;
+  margin-top: 15px;
+  color: #ffffff;
+}
+nav {
+  background-color: #002f6c;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffffff;
+}
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  color: #002f6c;
+}
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: center;
+}
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.artwork {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  border: 2px solid #ffcc00;
+}
+.artwork:hover {
+  transform: translateY(-5px);
+}
+.artwork img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.artwork .info {
+  padding: 15px;
+}
+.artwork .info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #002f6c;
+}
+.artwork .info p {
+  font-size: 0.95em;
+  color: #555;
+}
+.contact {
+  text-align: center;
+}
+.contact a {
+  color: #002f6c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #002f6c;
+  font-size: 0.9em;
+  color: #ffcc00;
+}
